@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#989089;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav img{
+    height: 150px;
+    width: 150px;
+}
+nav ul li{
+    margin-left: 25px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Adjust as needed */
+}
+.image-container{
+    position: relative;
+    width: 100%;
+    
+}
+.image-container img{
+    max-width: 100%;
+}
+
+.text-overlay{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    margin-top: 50px;
+}
+.btn button{
+    font-size: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(152,144,137,0.9);
+    margin:50px 30px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .text-overlay {
+        font-size: 30px;
+    }
+
+    .text-overlay h1 {
+        font-size: 2.5em;
+    }
+
+    .btn button {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+
+    nav img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .text-overlay {
+        top: 25%;
+        font-size: 25px;
+    }
+
+    .text-overlay h1 {
+        font-size: 2em;
+    }
+
+    .btn button {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-overlay {
+        top: 30%;
+        font-size: 20px;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.5em;
+    }
+
+    .btn button {
+        font-size: 50px;
+        margin: 40px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    nav img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .text-overlay {
+        top: 35%;
+        font-size: 18px;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.2em;
+    }
+
+    .btn button {
+        font-size: 40px;
+        margin: 30px 15px;
+    }
+}
